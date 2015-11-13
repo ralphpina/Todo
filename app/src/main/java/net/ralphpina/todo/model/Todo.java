@@ -8,6 +8,15 @@ import com.parse.ParseUser;
 @ParseClassName("Todo")
 public class Todo extends ParseObject {
 
+    public Todo() {
+    }
+
+    public Todo(String description, boolean done) {
+        this();
+        setDescription(description);
+        setDone(done);
+    }
+
     // ==== USER ===================================================================================
 
     public ParseUser getUser() {
